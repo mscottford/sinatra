@@ -77,13 +77,13 @@ Gem::Specification.new do |s|
   s.test_files = s.files.select {|path| path =~ /^test\/.*_test.rb/}
 
   s.extra_rdoc_files = %w[README.rdoc LICENSE]
-  s.add_dependency 'rack',    '>= 1.0'
+  s.add_dependency 'rack',    '>= 1.0', '< 1.2.0'
   s.add_development_dependency 'shotgun', '>= 0.6',   '< 1.0'
-  s.add_development_dependency 'rack-test', '>= 0.3.0'
-  s.add_development_dependency 'haml'
-  s.add_development_dependency 'builder'
-  s.add_development_dependency 'erubis'
-  s.add_development_dependency 'less'
+  s.add_development_dependency 'rack-test', '>= 0.3.0', '< 0.6.0'
+  s.add_development_dependency 'haml', '< 3.0.0'
+  s.add_development_dependency 'builder', '< 3.0.0'
+  s.add_development_dependency 'erubis', '< 2.6.6'
+  s.add_development_dependency 'less', '< 2.0.0'
 
   s.has_rdoc = true
   s.homepage = "http://sinatra.rubyforge.org"
